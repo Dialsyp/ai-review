@@ -1,6 +1,13 @@
 # ai-review
  
 AI-powered code review that analyzes **every function** in your codebase — not just ESLint warnings.
+
+
+
+https://github.com/user-attachments/assets/d255b911-7375-4873-82e2-5c31f34d32f0
+
+
+
  
 Unlike ESLint rules that check syntax and style, `ai-review` uses a local LLM to understand the *intent* of your code and surface real issues: missing edge cases, misleading names, incomplete error handling, security smells, and what's genuinely well done.
  
@@ -35,7 +42,7 @@ Unlike ESLint rules that check syntax and style, `ai-review` uses a local LLM to
  
 ```bash
 # Install Ollama, then pull a model
-ollama pull llama3.1
+ollama pull llama3.2:3b
 ```
  
 ---
@@ -44,10 +51,10 @@ ollama pull llama3.1
  
 ```bash
 # As a global CLI tool
-npm install -g eslint-plugin-ai-review
+npm install -g ai-review
  
 # Or as a dev dependency in your project
-npm install --save-dev eslint-plugin-ai-review
+npm install --save-dev ai-review
 ```
  
 ---
