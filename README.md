@@ -125,16 +125,7 @@ export default {
  
 ---
  
-## GitHub Actions
- 
-```yaml
-- name: Run AI review
-  run: ai-review run src/ --format github --min-score 6
-```
- 
-See `.github/workflows/ai-review.yml` for the full workflow with Ollama setup.
- 
----
+
  
 ## How it works
  
