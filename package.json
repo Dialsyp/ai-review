@@ -1,6 +1,6 @@
 {
   "name": "ai-review",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "AI-powered code review for every function in your codebase — not just ESLint warnings",
   "main": "src/index.js",
   "bin": {
