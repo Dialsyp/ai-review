@@ -1,4 +1,4 @@
-# eslint-plugin-ai-review
+# ai-review
  
 AI-powered code review that analyzes **every function** in your codebase — not just ESLint warnings.
  
@@ -78,26 +78,7 @@ ai-review run src/ --format github
 # Disable cache (re-analyze everything)
 ai-review run src/ --no-cache
 ```
- 
-### As an ESLint plugin
- 
-Run `ai-review run` first to generate the cache, then configure ESLint to report low-score functions inline:
- 
-```js
-// eslint.config.js
-import aiReview from 'eslint-plugin-ai-review'
- 
-export default [
-  {
-    plugins: { 'ai-review': aiReview },
-    rules: {
-      'ai-review/all': ['warn', { minScore: 6 }]
-    }
-  }
-]
-```
- 
----
+
  
 ## Configuration
  
@@ -125,16 +106,7 @@ export default {
  
 ---
  
-## GitHub Actions
- 
-```yaml
-- name: Run AI review
-  run: ai-review run src/ --format github --min-score 6
-```
- 
-See `.github/workflows/ai-review.yml` for the full workflow with Ollama setup.
- 
----
+
  
 ## How it works
  
@@ -160,7 +132,6 @@ No code ever leaves your machine. Everything runs locally via Ollama.
 | Command | Description |
 |---|---|
 | `ai-review run [path]` | Review all functions in path |
-| `ai-review models` | List available Ollama models |
 | `ai-review init` | Create default config file |
  
 ---
