@@ -1,6 +1,6 @@
 {
   "name": "ai-review",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-powered code review for every function in your codebase — not just ESLint warnings",
   "main": "src/index.js",
   "bin": {
@@ -50,5 +50,4 @@
     "type": "git",
     "url": "https://github.com/Dialsyp/ai-review"
   }
-
 }
