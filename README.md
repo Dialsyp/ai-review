@@ -78,26 +78,7 @@ ai-review run src/ --format github
 # Disable cache (re-analyze everything)
 ai-review run src/ --no-cache
 ```
- 
-### As an ESLint plugin
- 
-Run `ai-review run` first to generate the cache, then configure ESLint to report low-score functions inline:
- 
-```js
-// eslint.config.js
-import aiReview from 'eslint-plugin-ai-review'
- 
-export default [
-  {
-    plugins: { 'ai-review': aiReview },
-    rules: {
-      'ai-review/all': ['warn', { minScore: 6 }]
-    }
-  }
-]
-```
- 
----
+
  
 ## Configuration
  
