@@ -10,7 +10,20 @@ https://github.com/user-attachments/assets/d255b911-7375-4873-82e2-5c31f34d32f0
 
  
 Unlike ESLint rules that check syntax and style, `ai-review` uses a local LLM to understand the *intent* of your code and surface real issues: missing edge cases, misleading names, incomplete error handling, security smells, and what's genuinely well done.
- 
+
+⚠️ For now, all analysis runs locally using Ollama models.  
+In future versions, `ai-review` will support optional cloud/API routing to hosted models (OpenAI, Mistral API, etc.) for faster and more scalable analysis.
+
+## Roadmap
+
+- [x] Local AI analysis via Ollama
+- [x] AST-based function extraction
+- [x] Caching system
+- [ ] Cloud API support (OpenAI / Mistral / Anthropic)
+- [ ] GitHub PR annotations
+- [ ] VSCode extension
+- [ ] Multi-language support (Python, Go)
+
 ```
 📄 src/auth/login.js — 4 functions
  
