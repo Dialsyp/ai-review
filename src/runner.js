@@ -1,8 +1,7 @@
 import { glob } from "glob";
-import path, { relative } from "path";
+import { relative } from "path";
 import chalk from "chalk";
 import { extractFunctions } from "./extractor.js";
-import { batchAnalyze } from "./llm.js";
 import { applyCacheToFunctions, cacheResults } from "./cache.js";
 
 /**

@@ -79,6 +79,7 @@ program
       console.error(
         chalk.dim(`  And the model is pulled: ollama pull ${config.model}\n`),
       );
+      console.error("error  ", err)
       process.exit(1);
     }
 

@@ -87,7 +87,7 @@ function renderFunction(fn) {
 
 // ─── Summary ─────────────────────────────────────────────────────────────────
 
-function renderSummary(results, config) {
+function renderSummary(results) {
   const reviewed = results.filter(r => r.review)
   const failed = results.filter(r => !r.review)
   const fromCache = results.filter(r => r.fromCache)
