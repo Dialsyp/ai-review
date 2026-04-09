@@ -1,4 +1,4 @@
-# eslint-plugin-ai-review
+# ai-review
  
 AI-powered code review that analyzes **every function** in your codebase — not just ESLint warnings.
  
@@ -160,7 +160,6 @@ No code ever leaves your machine. Everything runs locally via Ollama.
 | Command | Description |
 |---|---|
 | `ai-review run [path]` | Review all functions in path |
-| `ai-review models` | List available Ollama models |
 | `ai-review init` | Create default config file |
  
 ---
