@@ -14,6 +14,16 @@ Unlike ESLint rules that check syntax and style, `ai-review` uses a local LLM to
 ⚠️ For now, all analysis runs locally using Ollama models.  
 In future versions, `ai-review` will support optional cloud/API routing to hosted models (OpenAI, Mistral API, etc.) for faster and more scalable analysis.
 
+## Roadmap
+
+- [x] Local AI analysis via Ollama
+- [x] AST-based function extraction
+- [x] Caching system
+- [ ] Cloud API support (OpenAI / Mistral / Anthropic)
+- [ ] GitHub PR annotations
+- [ ] VSCode extension
+- [ ] Multi-language support (Python, Go)
+
 ```
 📄 src/auth/login.js — 4 functions
  
